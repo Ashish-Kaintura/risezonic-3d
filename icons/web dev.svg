@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 389.76 389.76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-1" cx="142.74" cy="142.64" rx="103.18" ry="103.97"/>
+  <ellipse class="cls-1" cx="248.08" cy="142.64" rx="103.18" ry="103.97"/>
+  <ellipse class="cls-1" cx="142.74" cy="246.61" rx="103.18" ry="103.97"/>
+  <ellipse class="cls-1" cx="248.08" cy="246.61" rx="103.18" ry="103.97"/>
+</svg>

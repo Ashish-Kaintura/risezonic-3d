@@ -1,0 +1,141 @@
+/* .container {
+    perspective: 1000px;
+}
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 1s;
+    animation: roate;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.box:hover {
+    transform: rotateY(180deg); isko hidde karna hoag 
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    color: #333;
+}
+
+@keyframes roate {
+    0% {
+        transform: rotateY(0);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+} */
+
+.Aboutcard {
+    /* margin-top: 50px; */
+    width: 300px;
+    height: 150px;
+    background: #111111;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%); */
+    /* top: 50%;
+    left: 50%; */
+    padding: 12px 10px;
+}
+
+.Aboutcard_load {
+    width: 115px;
+    height: 115px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    float: left;
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%);
+    border-radius: 50%;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load89234 2s infinite;
+}
+
+.Aboutcard_load_extreme_title {
+    width: 160px;
+    height: 25px;
+    position: relative;
+    float: right;
+    border-radius: 5px;
+    /* background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%); */
+    background-color: #77777760;
+    backdrop-filter: blur(10px);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load89234 2s infinite;
+}
+
+.Aboutcard_load_extreme_descripion {
+    width: 160px;
+    height: 80px;
+    position: relative;
+    float: right;
+    border-radius: 5px;
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%);
+    margin-top: 10px;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load89234 2s infinite;
+}
+
+.boxshine {
+    animation: load89234 2s infinite;
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%);
+}
+
+@keyframes load89234 {
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+/* ////////// item center section services  */
+/* 
+.items-center-on-tablet {
+    @apply flex overflow-hidden items-center gap-5;
+}
+
+@media (min-width: 640px) {
+    .items-center-on-tablet {
+        @apply flex items-center gap-5;
+    }
+} */
+
+/* :horizontal scroll animation  */
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.slidebox .horislider {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    animation: slide 10s linear infinite;
+}
+
+.slidebox .horislider  {
+    /* text-shadow: 0 0 2px #000; */
+}

@@ -1,0 +1,42 @@
+.message {
+
+
+    /* zoom: 0.5; */
+    animation: animate_4010 8s ease-in-out infinite;
+    animation-delay: -5s;
+
+}
+
+@keyframes animate_4010 {
+
+    0%,
+    100% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+/* Add your other styles here */
+
+.hover-effect {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .hover-effect:hover {
+    background-color: black;
+    color: #d7d7d7;
+  }
+  
+  .hover-effect:hover h1 {
+    opacity: 1;
+  }
+  
+  .transition-opacity {
+    transition-duration: 0.5s; /* Adjust duration as needed */
+    transition-delay: 0.2s; /* Add delay as needed */
+    transition-timing-function: ease-in-out; /* Add your desired timing function */
+  }
+  
