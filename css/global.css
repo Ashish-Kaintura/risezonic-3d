@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: gilroy;
     scroll-behavior: smooth;
+
 }
+
 /* whatsapp .icon  start */
 .whats-app {
     position: fixed;
@@ -19,13 +21,17 @@
     font-size: 30px;
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
-  }
-  
-  .my-float {
+}
+
+.my-float {
     margin-top: 16px;
-  }
-  /* whatsapp end  */
+}
+
+/* whatsapp end  */
 /* phone navigation  */
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
 
 .sidebar {
     height: 100%;
@@ -101,7 +107,14 @@
 
 /* phone navigation end  */
 
+/* dropdwon start*/
+.toggle-content  {
+    display: none;
+    /* margin-top: 20px; */
+  }
 
+
+/* drop down end  */
 
 /* ///// our work button*/
 
