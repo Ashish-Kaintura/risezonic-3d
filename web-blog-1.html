@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Merriweather&family=Nunito+Sans:opsz,wght@6..12,300&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              barlow: ["Barlow", "sans"],
+              arsenal: ["Arsenal", "sans"],
+              robotoflex: ["Roboto Flex", "sans-serif"],
+              cormorantgaramond: ["Cormorant Garamond", "serif"],
+              sans: ["Nunito Sans", "Helvetica", "Arial", "sans-serif"],
+            },
+            letterSpacing: {
+              widest: ".10em",
+            },
+            width: {
+              120: "20rem",
+              128: "25rem",
+              130: "28rem",
+            },
+            height: {
+              120: "20rem",
+              128: "25rem",
+              130: "28rem",
+            },
+            animation: {
+              bounce: "bounce 1s infinite",
+            },
+            keyframes: {
+              bounce: {
+                "0%, 100%": {
+                  transform: "translateY(-5%)",
+                  "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+                },
+                "50%": {
+                  transform: "rotate(0deg)",
+                },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/box.css" />
+    <link rel="stylesheet" href="css/stars.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>
+      Welcome to the Risezonic - Top Website Development Company in Delhi NCR
+    </title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="py-5 px-5 justify-between flex items-center bg-[#111111] z-10"
+        id="headnav"
+      >
+        <ul class="">
+          <li class="">
+            <a href="index.html">
+              <img
+                class="w-[200px]"
+                src="logo/cropped-Risezonic-logo-1024x186 - Copy.png"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+        <ul class="sm:flex hidden text-black gap-5 text-white nav2">
+          <!-- <li class="font-robotoflex uppercase text-[14px] cursor-pointer  hover:bg-[#f0661b] py-2 px-4 rounded-full border-4 border-[#111111] hover:border-[#d7d7d7] trasnsition ease-in duration-200 hover:translate-y-2">
+                    <a href="index.html"></a>Home
+                  </li> -->
+          <a href="what-we-do.html">
+            <li
+              class="font-robotoflex uppercase text-[14px] cursor-pointer hover:bg-[#f0661b] py-2 px-4 rounded-full border-4 border-[#111111] hover:border-[#d7d7d7] trasnsition ease-in duration-200 hover:translate-y-2"
+            >
+              What We Do
+            </li>
+          </a>
+          <a href="Aboutus.html">
+            <li
+              class="font-robotoflex uppercase text-[14px] cursor-pointer hover:bg-[#f0661b] py-2 px-4 rounded-full border-4 border-[#111111] hover:border-[#d7d7d7] trasnsition ease-in duration-200 hover:translate-y-2"
+            >
+              About Us
+            </li>
+          </a>
+          <a href="Services.html">
+            <li
+              class="font-robotoflex uppercase text-[14px] cursor-pointer hover:bg-[#f0661b] py-2 px-4 rounded-full border-4 border-[#111111] hover:border-[#d7d7d7] trasnsition ease-in duration-200 hover:translate-y-2"
+            >
+              Services
+            </li>
+          </a>
+
+          <a href="Blogs.html">
+            <li
+              class="font-robotoflex uppercase text-[14px] cursor-pointer hover:bg-[#f0661b] py-2 px-4 rounded-full border-4 border-[#111111] hover:border-[#d7d7d7] trasnsition ease-in duration-200 hover:translate-y-2"
+            >
+              Blogs
+            </li>
+          </a>
+        </ul>
+        <ul class="text-white sm:flex hidden gap-5 nav3">
+          <li>
+            <a href="OurWork.html"
+              ><button class="btn">
+                <strong class="font-robotoflex">OUR WORK</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="ContactUs.html"
+              ><button class="btn">
+                <strong class="font-robotoflex">CONTACT US</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </button>
+            </a>
+          </li>
+        </ul>
+        <ul class="text-white nav4">
+          <li>
+            <i
+              class="fa-solid fa-bars fa-xl openbtn cursor-pointer"
+              onclick="toggleNav()"
+            ></i>
+            <i
+              class="fa-solid fa-times fa-xl closebtn cursor-pointer"
+              style="display: none"
+              onclick="closeNav()"
+            ></i>
+          </li>
+        </ul>
+      </nav>
+      <!-- phone nav  -->
+      <div id="mySidebar" class="sidebar">
+        <a class="text-[15px] uppercase " href="Index.html"
+          ><i class="fa-solid fa-house"></i> &#160; Home
+        </a>
+        <a class="text-[15px] uppercase " href="what-we-do.html">
+          <i class="fa-solid fa-building"></i> &#160; WHAT WE DO</a
+        >
+        <a class="text-[15px] uppercase " href="Aboutus.html"
+          ><i class="fa-regular fa-address-card"></i> &#160; ABOUT US</a
+        >
+        <a class="text-[15px] uppercase " href="Services.html">
+          <i class="fa-solid fa-desktop"></i> &#160; Services</a
+        >
+
+        <nav class="text-white ps-10">
+          <div class="flex items-center gap-4">
+            <div><i class="fa-solid fa-right-to-bracket"></i></div>
+            <button
+              class="font-cormorantgaramond text-orange-600 text-[17px] hover:translate-x-4 hover:text-gray-200 trasnsition-all duration-200 ease-in toggle-button"
+              data-target="content1"
+            >
+              Web Design
+            </button>
+          </div>
+          <div id="content1" class="toggle-content">
+            <ul class="text-14px">
+              <li><a href="Custom_Designe.html">Custom website </a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="Responsive_Website.html">Responsive website </a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="CorporateWebsite.html">Corporate website</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Wordpress_Development.html"> Wordpress website</a>
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="DynamicWebsite.html"> Dynamic website</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="StaticWebsite.html"> Static website</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="StaticWebsite.html"> Static website</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="MobileDesign.html"> Mobile Website</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="GraphicDesign.html">Graphic Design</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="LogoDesign.html"> Logo Design</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="CmsWebsite.html"> CMS Website</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="FlashWebsite.html">Flash Website</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="Web-Portal-Design.html"> Web Portal Design</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="WebsiteDesign.html"> Website Design</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="text-white ps-10">
+          <div class="flex items-center gap-4">
+            <div><i class="fa-solid fa-right-to-bracket"></i></div>
+            <button
+              class="font-cormorantgaramond text-orange-600 text-[17px] hover:translate-x-4 hover:text-gray-200 trasnsition-all duration-200 ease-in toggle-button"
+              data-target="content2"
+            >
+              Web Development
+            </button>
+          </div>
+          <div id="content2" class="toggle-content">
+            <ul class="text-14px">
+              <li>
+                <a href="Custom_php_web._Dev.html">
+                  Custom PHP Web Development</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="php_web_Dev.html">PHP Website Development</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Php_Mysql_Web_Development.html">
+                  PHP-Mysql Web development</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="HRM_Solution.html"> HRM Solution</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="API-Integration-Services.html">
+                  API Integration Services</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Fleet-Management-Software.html">
+                  Fleet Management Software</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="CMS-Development.html"> CMS Development</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href=" E-commerce-Website-Development.html">
+                  E-commerce Website Development</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="PHP-Web-Application-Development.html">
+                  PHP-Web Application Development</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="CRM-Developmen.html"> CRM Development</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Fleeto-Car-Rental-Software-Development.html">
+                  Fleeto Car Rental Software Development</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Hotel-Management-Software.html">
+                  Hotel Management Software</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="text-white ps-10">
+          <div class="flex items-center gap-4">
+            <div><i class="fa-solid fa-right-to-bracket"></i></div>
+            <button
+              class="font-cormorantgaramond text-orange-600 text-[17px] hover:translate-x-4 hover:text-gray-200 trasnsition-all duration-200 ease-in toggle-button"
+              data-target="content3"
+            >
+              App development
+            </button>
+          </div>
+          <div id="content3" class="toggle-content">
+            <ul class="text-14px">
+              <li><a href="Mobile_App_Dev.html">Mobile App Development</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="Android_Dev.html"> Android Development </a></li>
+            </ul>
+            <ul class="text-14px">
+              <li><a href="Ios_Dev.html">IOS Development</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="text-white ps-10">
+          <div class="flex items-center gap-4">
+            <div><i class="fa-solid fa-right-to-bracket"></i></div>
+            <button
+              class="font-cormorantgaramond text-orange-600 text-[17px] hover:translate-x-4 hover:text-gray-200 trasnsition-all duration-200 ease-in toggle-button"
+              data-target="content4"
+            >
+              E-Commerce Solutions
+            </button>
+          </div>
+          <div id="content4" class="toggle-content">
+            <ul class="text-14px">
+              <li>
+                <a href="E-com-web-dev.html">Ecommerce Web Development </a>
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="OpenCart-webDev.html"
+                  >Open Cart Website Development
+                </a>
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Shopeing_cart_Solution.html"
+                  >Shopping Cart Solutions</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="mageto_web_development.html">
+                  Magento Web Development</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Shopify-Web-Development.html"
+                  >Shopify Web Development</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Woocommerce-Development.html">
+                  Woocommerce Development</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Multi-Vendor-eCommerce-Development.html">
+                  Multi Vendor eCommerce Development</a
+                >
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="E-commerce-Web-Development-Company.html">
+                  E-commerce Web Development Company</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="text-white ps-10">
+          <div class="flex items-center gap-4">
+            <div><i class="fa-solid fa-right-to-bracket"></i></div>
+            <button
+              class="font-cormorantgaramond text-orange-600 text-[17px] hover:translate-x-4 hover:text-gray-200 trasnsition-all duration-200 ease-in pb-2 toggle-button"
+              data-target="content5"
+            >
+              Digital Marketing
+            </button>
+          </div>
+          <div id="content5" class="toggle-content">
+            <ul class="text-14px">
+              <li><a href="SEO-Services.html">Seo Services</a></li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Mobile_App_And_Marketing.html"
+                  >Mobile App Marketing
+                </a>
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Social_media_Marketing.html">Social Media Marketing</a>
+              </li>
+            </ul>
+            <ul class="text-14px">
+              <li>
+                <a href="Pay_per_Click_managment.html">
+                  Pay Per Click Marketing</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <a class="text-[15px] uppercase " href="Blogs.html">
+          <i class="fa-solid fa-blog"></i> &#160; Blog</a
+        >
+        <a class="text-[15px] uppercase " href="OurWork.html"
+          ><i class="fa-solid fa-laptop-file"></i> &#160; Our Work</a
+        >
+        <a class="text-[15px] uppercase " href="ContactUs.html"
+          ><i class="fa-regular fa-address-card"></i> &#160; CONTACT US</a
+        >
+        <a class="text-[15px] uppercase " href="privacyPolicy"> <i class="fa-solid fa-lock"></i> &#160; Privacy Policy</a>
+      </div>
+      <!-- phone nav end  -->
+      <script>
+        var buttons = document.querySelectorAll(".toggle-button");
+
+        buttons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            var targetId = button.getAttribute("data-target");
+            var targetContent = document.getElementById(targetId);
+
+            if (targetContent.style.display === "none") {
+              targetContent.style.display = "block";
+            } else {
+              targetContent.style.display = "none";
+            }
+          });
+        });
+      </script>
+      <script>
+        function toggleNav() {
+          var sidenav = document.getElementById("mySidebar");
+          var menuIcon = document.querySelector(".openbtn");
+          var closeIcon = document.querySelector(".closebtn");
+
+          if (sidenav.style.width === "0px" || sidenav.style.width === "") {
+            sidenav.style.width = "250px";
+            menuIcon.style.display = "none";
+            menuIcon.style.transform = "rotate(360deg)";
+            closeIcon.style.display = "block";
+          } else {
+            sidenav.style.width = "0";
+            menuIcon.style.transform = "rotate(360deg)";
+            menuIcon.style.display = "block";
+            closeIcon.style.display = "none";
+          }
+        }
+
+        function closeNav() {
+          var sidenav = document.getElementById("mySidebar");
+          var menuIcon = document.querySelector(".openbtn");
+          var closeIcon = document.querySelector(".closebtn");
+
+          sidenav.style.width = "0";
+          menuIcon.style.display = "block";
+          closeIcon.style.display = "none";
+        }
+      </script>
+    </header>
+    <main class="overflow-hidden">
+      <div class="pb-20">
+        <section class="relative">
+          <div
+            class="flex overflow-hidden h-[480px] object-cover object-center justify-center items-center"
+          >
+            <img
+              width="100%"
+              class="object-cover"
+              src="https://www.nibblesoftware.com/blog/public/images/blogs/Mobile-Optimization.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute w-[650px] h-32 -bottom-[16%] left-[28%] rounded-2xl shadow-2xl shadow-gray-400 shadow-inner items-center flex justify-center p-5 bg-gray-200"
+          >
+            <div>
+              <h1 class="font-product -gray-700 text-2xl">
+                Welcome to the Risezonic - Top Website Development Company in
+                Delhi NCR
+              </h1>
+
+              <span class="font-product pt-2"
+                >14/2/2024 &#160;
+                <span class="font-product text-gray-700">
+                  By Risezonic</span
+                ></span
+              >
+            </div>
+          </div>
+        </section>
+        <section class="font-product">
+          <div class="pt-12 flex justify-center gap-6">
+            <div class="flex-col justify-center">
+              <div
+                class="w-12 h-12 bg-gray-200 rounded-sm flex justify-center items-center mt-2"
+              >
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/risezonicofficial/"
+                >
+                  <i
+                    class="fa-brands fa-facebook fa-2xl hover:-translate-y-3 hover:-rotate-[360deg] hover:text-orange-600 trasnsition-all ease-in duration-200"
+                  ></i
+                ></a>
+              </div>
+              <div
+                class="w-12 h-12 bg-gray-200 rounded-sm flex justify-center items-center mt-2"
+              >
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/risezonicofficial/"
+                >
+                  <i
+                    class="fa-brands fa-instagram fa-2xl hover:-translate-y-3 hover:-rotate-[360deg] hover:text-orange-600 trasnsition-all ease-in duration-200"
+                  ></i
+                ></a>
+              </div>
+              <div
+                class="w-12 h-12 bg-gray-200 rounded-sm flex justify-center items-center mt-2"
+              >
+                <a
+                  target="_blank"
+                  href="https://x.com/risezonic?t=LEr5s4HRTWtgaRBYOMF84Q&s=09"
+                >
+                  <i
+                    class="fa-brands fa-twitter fa-2xl hover:-translate-y-3 hover:-rotate-[360deg] hover:text-orange-600 trasnsition-all ease-in duration-200"
+                  ></i
+                ></a>
+              </div>
+              <div
+                class="w-12 h-12 bg-gray-200 rounded-sm flex justify-center items-center mt-2"
+              >
+                <a
+                  target="_blank"
+                  href="https://in.linkedin.com/company/risezonic"
+                >
+                  <i
+                    class="fa-brands fa-linkedin fa-2xl hover:-translate-y-3 hover:-rotate-[360deg] hover:text-orange-600 trasnsition-all ease-in duration-200"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="flex-col justify-center w-[60%] pt-20">
+              <div>
+                <p class="text-gray-700">
+                  Greetings fellow digital denizens of Delhi NCR! Is your
+                  current website underperforming across key business metrics?
+                  Do lackluster page speed, design and functionality have you
+                  singing website development blues? Well friends, fret no more
+                  because the code cavalry of Risezonic being top Website
+                  Development company in Delhi NCR is riding to your online
+                  rescue! Our team of website whisperers brings next-level
+                  skills for architecting digital assets guaranteed to delight
+                  both users and search engines. From cutting-edge design to
+                  smooth UX to robust infrastructure, Risezonic fires on all
+                  website cylinders. The result? Future-ready online platforms
+                  primed for conversions and boundless traffic growth. So
+                  whether launching new sites or revitalizing existing ones,
+                  make Risezonic your trusty web development posse. Saddle up
+                  partners and let's ride towards digital fortune together!
+                </p>
+              </div>
+              <div class="mt-2">
+                <div>
+                  <h1
+                    class="flex justify-center text-center text-2xl font-product"
+                  >
+                    Risezonic Wields Cutting-Edge Website Weaponry
+                  </h1>
+                </div>
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    Now hold your horses skeptics questioning whether Risezonic
+                    actually brings unmatched web dev firepower. Our developers
+                    do indeed boast state-of-the-art skills for crafting
+                    websites packing serious heat! We stay sharp across trending
+                    technologies like:
+                  </p>
+                </div>
+                <ul class="list-disc ps-8 pt-4 text-gray-700">
+                  <li>
+                    PHP / MySQL - The classic backend combo powering dynamic
+                    database sites.
+                  </li>
+                  <li>
+                    JavaScript Frameworks - Vue, React and Angular for slick
+                    interactive UIs.
+                  </li>
+                  <li>
+                    Headless CMS - Craft, Contentful and other flexible content
+                    management.
+                  </li>
+                  <li>
+                    Python / Django - Rapid web app development with this
+                    popular language.
+                  </li>
+                  <li>
+                    Cloud Infrastructure - Hosting, storage and deployment
+                    scalability.
+                  </li>
+                </ul>
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    Yet technical breadth alone doesn't cut the web dev mustard
+                    in today's crowded marketplace. True website wizards must
+                    also obsess over core web vitals like site speed, security
+                    and search visibility. Luckily those imperatives are
+                    Risezonic specialties as well! So whether tackling complex
+                    custom coding projects or improving existing site
+                    performance, our team brings complete end-to-end expertise.
+                    Rope that all together and you get blazing fast,
+                    functionally rich websites optimized for sustainable growth.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <div>
+                  <h1
+                    class="flex justify-center text-center text-2xl font-product"
+                  >
+                    Risezonic Lassos Long Term Website Relationships: Website
+                    Development company in Delhi NCR
+                  </h1>
+                </div>
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    For Risezonic, successfully launching websites is just the
+                    beginning of our wild rodeo ride together! We focus on
+                    forging lasting digital partnerships spanning years - not
+                    just bolting after project payouts. This sustained
+                    engagement ensures your custom online asset continually
+                    elevates ROI while avoiding the dangers of stagnation. Our
+                    comprehensive managed growth plans take the stress out of
+                    keeping websites in tip top shape over the long haul. Expect
+                    quarterly site audits assessing design appeal, technical
+                    architecture and infrastructure integrity. We’ll spot any
+                    looming issues around site speed, broken pages or security
+                    vulnerabilities.
+                  </p>
+                </div>
+                <br />
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    Risezonic being best Website Development company in Delhi
+                    NCR also facilitates regular website feature upgrades to
+                    match evolving user expectations. Adding new functionality
+                    like personalization, gamification or augmented reality
+                    prevents digital assets from falling behind rivals. We
+                    handle all technical complexities allowing you to simply
+                    focus on big picture marketing. And through ongoing
+                    conversion optimization initiatives, we’ll uncover fresh UX
+                    approaches for unlocking greater sales potential from
+                    existing site traffic. Consider Risezonic your trusty web
+                    sheriff - we got your back protecting online interests year
+                    after year!
+                  </p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <div>
+                  <h1
+                    class="flex justify-center text-center text-2xl font-product"
+                  >
+                    Risezonic Acquire A Revolutionarily Personal Approach
+                  </h1>
+                </div>
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    However, what makes our website services stand out is the
+                    dedication to understanding everything about every partner’s
+                    needs and goals. We do not use recycled old templates of the
+                    web or push square peg customers in round holes. Custom
+                    discovery sessions help us understand your brand’s essence
+                    and target audience in-depth. This insight then informs all
+                    web design and development choices, such as information
+                    architecture, visual identity, conversion optimization
+                    flows. Risezonic also keeps the website developmental
+                    process very open and transparent. You will be giving
+                    continuous feedback on the mock-ups and demos until you are
+                    fully satisfied with the final product.
+                  </p>
+                </div>
+                <br />
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    The result? Unique websites meticulously customized to boost
+                    YOUR individual business ideals. Therefore, while rivals
+                    come up with standard cookie cutter sites, Risezonic
+                    delivers custom made digital solutions for brands to stand
+                    out in highly competitive niches. Now that’s a revolutionary
+                    philosophy!
+                  </p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <div>
+                  <h2
+                    class="flex justify-center text-center text-2xl font-product"
+                  >
+                    Partner With Risezonic to Saddle Up Website Success!
+                  </h2>
+                </div>
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    Amigos, the choice is clear. To hit website gold, you need
+                    true experts guiding your online Sheriff's badge. Allow
+                    Risezonic's cracking web team to architect your breakout
+                    digital story! Reach out now to ignite an expansive new
+                    chapter where possibilities remain boundless. With our
+                    skills, passion and sheer creative joy, no website challenge
+                    proves too tricky for us to tackle. Let's connect today to
+                    strategize the first milemarkers on the long road to digital
+                    fortune and glory!
+                  </p>
+                </div>
+                <br />
+              </div>
+              <div class="mt-4">
+                <div>
+                  <h3
+                    class="flex justify-center text-center text-2xl font-product"
+                  >
+                    WHAT AWAITS For Risezonic's Future Story
+                  </h3>
+                </div>
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    There are still a ton of fascinating chapters in Risezonic's
+                    story yet to be revealed. From modest beginnings, we have
+                    quickly become the leading Website Development company in
+                    Delhi NCR. However, we have much larger goals in mind as we
+                    work to create websites that enthrall users in India and
+                    beyond.
+                  </p>
+                </div>
+                <br />
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    We cordially invite you to embark on an exciting adventure
+                    with our organization, which is brimming with creative
+                    trailblazers and visionaries. Let's push limits and realize
+                    our infinite potential as a team. The future has not yet
+                    been written, and Risezonic is in a position to write
+                    revolutionary digital experiences. Watch this space for our
+                    next exciting installment detailing our plans to
+                    revolutionize the website design industry!
+                  </p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <div>
+                  <h4
+                    class="flex justify-center text-center text-2xl font-product"
+                  >
+                    Rope Your Website Destiny to Risezonic for Untamed Online
+                    Riches!
+                  </h4>
+                </div>
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    Hopefully my previous web development praises sufficiently
+                    showcased Risezonic's talents for engineering rich digital
+                    frontiers full of potential! Now comes your time to stake a
+                    website claim in this lucrative online territory by hiring
+                    us as your trusty web partners.
+                  </p>
+                </div>
+                <br />
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    Our battle-tested brigade of creative tech cowpokes stand
+                    ready to drive website competitors off into the sunset.
+                    We’ll unleash cutting-edge web weapons like dynamic
+                    personalization, silky site speed optimization, and
+                    real-time interaction tracking to firmly cement your online
+                    dominance. This website land grab rests on building a sturdy
+                    online fort manned to conquer imperatives like:
+                  </p>
+                </div>
+                <ul class="pt-5 text-gray-700 list-disc">
+                  <li>Lassoing high value organic search rankings</li>
+                  <li>Establishing thought leadership within your niche</li>
+                  <li>Continually testing and improving conversion funnels</li>
+                  <li>Embedding analytics to unlock website insights</li>
+                </ul>
+                <br />
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    Risezonic unconditionally guarantees victory on these web
+                    battlefronts AND crafting stunning sites imbued with your
+                    unique brand essence. With us as your web development posse,
+                    get ready to live large off website riches for years on end!
+                  </p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <div>
+                  <h5
+                    class="flex justify-center text-center text-2xl font-product"
+                  >
+                    Blaze New Website Trails with Risezonic!
+                  </h5>
+                </div>
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    The choice is clear partner - to seize online gold, you NEED
+                    our gunslingers backing your sidearm. Allow Risezonic’s web
+                    pioneers to chart fresh trails towards digital fortunes
+                    hitherto unimagined. With our skills, sheer creative joy and
+                    technical tenacity, no website challenge will stand in our
+                    way for long!
+                  </p>
+                </div>
+                <br />
+                <div class="pt-5 text-gray-700">
+                  <p>
+                    Contact Risezonic now to spur your breakout success story!
+                    Submit ambitious web goals and pie-in-the-sky ideas - our
+                    team relishes elevating brands to new heights once deemed
+                    impossible. But time is of the essence so don’t delay in
+                    letting our website posse embark you on the frontier voyage
+                    of a lifetime!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="relative">
+      <div
+        class="bg-[#d7d7d7] rounded-b-2xl sm:flex block sm:justify-evenly justify-center items-center sm:pt-[150px] border-t-2"
+      >
+        <div class="flex flex-col sm:pt-5 pt-12">
+          <div class="flex sm:justify-start justify-center text-left pb-5">
+            <h1 class="text-[#151515] text-left text-lg px-4">
+              <span class="text-[#f0661b]"> Want </span> to learn more
+              <span class="text-[#f0661b]"> About us </span>?
+            </h1>
+          </div>
+          <div class="px-4">
+            <p>
+              Send us a message, or call us if you prefer. Also feel free to
+              <br />
+              book a tour. We are happy to share our experiences with you
+              <br />
+              and let you feel a part of the adventure called Life at Vega
+              <br />
+              IT.
+            </p>
+          </div>
+          <div class="flex sm:justify-start justify-center pt-8 pb-5">
+            <button class="btn-3 font-sans">
+              <span> CONTACT US </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-col pt-5">
+          <div class="flex sm:justify-start justify-center sm:text-left pb-3">
+            <h1
+              class="text-[#f0661b] sm:text-left text-center text-2xl uppercase ps-3"
+            >
+              Address
+            </h1>
+          </div>
+          <div class="pt-4 px-4 sm:text-left text-center py-3">
+            <h1 class="text-[#151515]ext-sm">info@risezonic.com</h1>
+            <h1 class="text-[#151515]ext-sm">Gurugram</h1>
+            <br />
+            <p>
+              07th Floor, Gate No. 03 & Gate No. 04, <br />Ambience Island, NH
+              48, Gurugram, 122002
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="px-4 py-2 bg-black">
+        <div
+          class="sm:flex block sm:justify-evenly justify-center uppercase text-white py-4 border-b-2 border-t-2 font-sans items-center"
+        >
+          <div
+            class="flex flex-col justify-center text-center uppercase items-center"
+          >
+            <!-- <h1 class="uppercase text-[#f0661b]">stay conected</h1> -->
+            <div class="socialcard flex justify-center text-center">
+              <a class="socialContainer containerOne" href="#">
+                <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a class="socialContainer containerTwo" href="#">
+                <svg viewBox="0 0 16 16" class="socialSvg twitterSvg">
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a class="socialContainer containerThree" href="#">
+                <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+                  <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a class="socialContainer containerFour" href="#">
+                <svg viewBox="0 0 16 16" class="socialSvg whatsappSvg">
+                  <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center text-center uppercase">
+            <h1 class="pb-4 uppercase text-[#f0661b] mt-4 mb-5">Quick Links</h1>
+            <div class="sm:flex block justify-center gap-5">
+              <div class="mb-4"><a href="">Home</a></div>
+              <div class="mb-4"><a href="">What we do</a></div>
+              <div class="mb-4"><a href="">services</a></div>
+              <div class="mb-4"><a href="">About Us</a></div>
+              <div class="mb-4"><a href="">Blog</a></div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center text-center uppercase">
+            <h1 class="pb-4 uppercase text-[#f0661b]">Need ASSISTANCE?</h1>
+            <div class="flex justify-center gap-5">
+              <a href="">7827110079</a>
+              <a href="">Info@risezonic.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="bg-[#d7d7d7] flex justify-center py-3 font-robotoflex">
+          <h1 class="font-robotoflex text-[#151515]">
+            <span class="text-[#f0661b] font-semibold text-center"
+              >@Risezonic</span
+            >. All Rights Reserved.Designed by<span
+              class="text-[#f0661b] font-semibold"
+            >
+              Risezonic</span
+            >
+          </h1>
+        </div>
+      </footer>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="blog.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="dist/aos.js"></script>
+    <script>
+      document.querySelector("html").classList.remove("no-js");
+      if (!window.Cypress) {
+        const scrollCounter = document.querySelector(".js-scroll-counter");
+
+        AOS.init({
+          mirror: true,
+        });
+
+        document.addEventListener("aos:in", function (e) {
+          console.log("in!", e.detail);
+        });
+
+        window.addEventListener("scroll", function () {
+          scrollCounter.innerHTML = window.pageYOffset;
+        });
+      }
+    </script>
+    <!-- whats app icon  -->
+    <a class="whats-app" href="https://wa.me/7827110079" target="_blank">
+      <i class="fab fa-whatsapp icon animate-bounce my-float"></i>
+    </a>
+  </body>
+</html>
