@@ -72,10 +72,7 @@
     <link rel="stylesheet" href="css/stars.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    />
+ 
     <!-- aos  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Best Website Development Services</title>
@@ -516,7 +513,7 @@
       <div class="pb-20">
         <section class="relative">
           <div
-            class="flex overflow-hidden h-[480px] object-cover object-center justify-center items-center"
+            class="flex overflow-hidden sm:h-[480px] object-cover object-center justify-center items-center"
           >
             <img
               width="100%"
@@ -526,8 +523,7 @@
             />
           </div>
           <div
-            class="absolute w-[650px] h-32 -bottom-[16%] left-[28%] rounded-2xl shadow-2xl shadow-gray-400 shadow-inner items-center flex justify-center p-5 bg-gray-200"
-          >
+            class="absolute sm:w-[650px] h-32 sm:-bottom-[16%] sm:left-[28%] border-b-4 border-b-red-600 -bottom-[18%] sm:left-[28%] rounded-2xl shadow-2xl shadow-gray-400 shadow-inner items-center flex justify-center p-5 bg-gray-200">
             <div>
               <h1 class="font-product -gray-700 text-2xl">
                 Best Website Development Services
@@ -1067,7 +1063,7 @@
         });
 
         window.addEventListener("scroll", function () {
-          scrollCounter.innerHTML = window.pageYOffset;
+
         });
       }
     </script>
