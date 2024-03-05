@@ -653,7 +653,7 @@
               </h1>
             </div>
             <div class="pt-8 text-lg font-semibold text-2xl">
-              <a href="tel:+">
+              <a href="tel:+9711110975">
                 <i class="fa-solid fa-chevron-right"></i> Call Us
               </a>
             </div>
@@ -684,7 +684,7 @@
               </h1>
             </div>
             <div class="pt-8 text-lg font-semibold text-2xl">
-              <a href="mailto:">
+              <a href="mailto:info@risezonic.com?subject-Query related inquiry.?">
                 <i class="fa-solid fa-chevron-right"></i> Mail Us
               </a>
             </div>
@@ -714,7 +714,7 @@
               </h1>
             </div>
             <div class="pt-8 text-lg font-semibold text-2xl">
-              <a href="http://">
+              <a href="https://maps.app.goo.gl/fng34RXjYpypVB7z7">
                 <i class="fa-solid fa-chevron-right"></i> Get Address
               </a>
             </div>
@@ -750,21 +750,89 @@
           <div class="form-containers">
             <form class="form">
               <div class="form_front">
-                <div class="form_details font-robotoflex uppercase">
+                <div class="form_details font-robotoflex uppercase ">
                   Contact Us
                 </div>
-                <input type="text" class="form-input" placeholder="Username" />
-                <input type="email" class="form-input" placeholder="Email" />
                 <input
                   type="text"
                   class="form-input"
-                  placeholder="Phone Number"
+                  placeholder="Username"
+                  id="name"
                 />
-                <button class="form-btn">Submit</button>
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="Email"
+                  id="email"
+                />
+                <input
+                  type="tel"
+                  class="form-input"
+                  placeholder="Phone Number"
+                  id="number"
+                />
+                <button class="form-btn" type="button" onclick="validateForm()">
+                  Submit
+                </button>
+                <div id="thank-you-message" style="display: none">
+                  <p
+                    class="text-green-700 text-2xl font-semibold font-kepler text-center"
+                  >
+                    Thank you for your submission!
+                  </p>
+                </div>
               </div>
             </form>
           </div>
         </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            // let message = document.getElementById("message").value;
+            let number = document.getElementById("number").value;
+
+            if (name === "" || email === ""  || number == "") {
+              alert("Please fill in all required fields.");
+            } else {
+              sendEmail(); // Corrected function name
+            }
+          }
+
+          function sendEmail() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            // let message = document.getElementById("message").value;
+            let number = document.getElementById("number").value;
+
+            // Show the "Thank you" message after successful submission
+            document.getElementById("thank-you-message").style.display =
+              "block";
+            // document.querySelector("form").style.display = "none";
+            document.querySelector("form").reset();
+            let body =
+              "Name: " +
+              name +
+              "<br/> Email: " +
+              email +
+              // "<br/> Message: " +
+              // message +
+              "<br/> Number: " +
+              number;
+
+            Email.send({
+              Host: "smtp.elasticemail.com",
+              Username: "Risezonic@gmail.com",
+              Password: "B28E5B62787E6D9BECD4DF174DCBAF681C89",
+              To: "a.s.kbest123@gmail.com",
+              From: "Risezonic@gmail.com",
+              Subject: "Leads For Risezonic",
+              Body: body,
+            });
+            console.log("Form sent successfully");
+          }
+        </script>
       </section>
       <section id="page4" class="w-full relative bg-[#d7d7d7]">
         <div class="absolute top-[0%] inset-0 left-[0%]">
